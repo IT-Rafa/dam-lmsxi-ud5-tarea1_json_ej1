@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<title>LMSXI-UD5-Tarea1-EJ1</title>
+	<link rel="stylesheet" href="CSS/stylesheet.css">
+	<script src="JS/forecast_JsonToTable.js"></script>
+
+	<style>
+
+	</style>
+</head>
+
+<body onload="test()">  
+
+	<header>
+		
+		<h1>DAM-LMSXI-UD5-T1.1</h1>
+		<h2>Ejercicio 1 para Tarea 1 de:</h2>
+		<h3>DAM (Desarrollo aplicaciones informaticas)</h3>
+		<h3>LMSXI (Linguaxe de Marcas e Sistemas de Xestión de información)</h3>
+		<h3>Unidad 5 - JSON</h3>
+		<section id="enunciado">
+			<h1>Enunciado:</h1>
+			<p>Crear un fichero HTML (haciendo uso de HTML y CSS) con un botón que al pulsar permita, mediante Ajax
+				JavaScript, leer el fichero abril.json.</p>
+				<p>Además, los datos leídos serán mostrados en una tabla dentro de
+				este fichero HTML.</p>
+			<p>La página creada debe ser visualmente elegante.</p>
+		</section>
+
+	</header>
+
+	<section>
+		<div id="buttonsCont">
+			<button type="button" onclick="getJson()">CARGAR JSON</button>
+			<button type="button" onclick="reset()">RESET</button>
+		</div>
+		
+		<div id="message">
+			
+		</div>
+
+		<div id="tableContainer">
+	<!-- 
+			<table>
+				<caption>Datos metereológicos de x del x al x de x del x</caption>
+				<thead>
+				  <tr>
+					<th scope="col">fecha</th>
+					<th scope="col">indicativo</th>
+					<th scope="col">nombre</th>
+					<th scope="col">provincia</th>
+					<th scope="col">altitud</th>
+					<th scope="col">tmed</th>
+					<th scope="col">prec</th>
+					<th scope="col">tmin</th>
+					<th scope="col">horatmin</th>
+					<th scope="col">tmax</th>
+					<th scope="col">horatmax</th>
+					<th scope="col">dir</th>
+					<th scope="col">velmedia</th>
+					<th scope="col">racha</th>
+					<th scope="col">horaracha</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">2021-04-01</th>
+					<td>1475X</td>
+					<td>SANTIAGO DE COMPOSTELA</td>
+					<td>A CORUÑA</td>
+					<td>240</td>
+					<td>16,8</td>
+					<td>14,0</td>
+					<td>13,0</td>
+					<td>23:59</td>
+					<td>20,6</td>
+					<td>03:10</td>
+					<td>26</td>
+					<td>0,6</td>
+					<td>9,4</td>
+					<td>03:40</td>
+				  </tr>
+			
+				  <tr>
+					<th scope="row">2021-04-01</th>
+					<td>1475X</td>
+					<td>SANTIAGO DE COMPOSTELA</td>
+					<td>A CORUÑA</td>
+					<td>240</td>
+					<td>16,8</td>
+					<td>14,0</td>
+					<td>13,0</td>
+					<td>23:59</td>
+					<td>20,6</td>
+					<td>03:10</td>
+					<td>26</td>
+					<td>0,6</td>
+					<td>9,4</td>
+					<td>03:40</td>
+				  </tr>
+
+				  <tr>
+					<th scope="row">2021-04-01</th>
+					<td>1475X</td>
+					<td>SANTIAGO DE COMPOSTELA</td>
+					<td>A CORUÑA</td>
+					<td>240</td>
+					<td>16,8</td>
+					<td>14,0</td>
+					<td>13,0</td>
+					<td>23:59</td>
+					<td>20,6</td>
+					<td>03:10</td>
+					<td>26</td>
+					<td>0,6</td>
+					<td>9,4</td>
+					<td>03:40</td>
+				  </tr>
+				</tbody>
+			  </table>
+			 -->
+
+
+		</div>
+	</section>
+
+	<footer>
+		<p>Creado por: Rafael Martínez Costas</p>
+	</footer>
+
+</body>
+
+</html>

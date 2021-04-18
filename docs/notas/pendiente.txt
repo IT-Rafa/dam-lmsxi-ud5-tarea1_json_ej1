@@ -1,0 +1,34 @@
+Hecho
+- Estructura básica: index.html, carpetas: CSS, JS RESOURCES
+- Diseño:
+	- header: Encabezado: (libre) Datos ejercicio, enunciado
+	- mensaje
+	- boton
+	- footer: creado por ....
+
+- 
+
+Pendiente:
+- Analizar formato de objeto para capturar los datos
+	- Cantidad campos = 
+	- Cantidad tuplas = 
+	- Valor localización 1º tupla (valdría cualquiera) =
+	- Valor fecha 1º tupla =
+	- Valor fecha última tupla =
+	- Convertir fecha a responsive =
+	- Valor cada título de campo =
+		- ? Convertir en mayúsculas las primera letra =
+	- Valor cada dato (i=nº tupla) = 
+
+
+- actualizar los datos pidiendolos cada vez ??
+
+- Convertir json a tabla
+
+- Mejorar diseño tabla
+	- Colores cabecera
+	- Colores para separar datos
+	- Responsive:
+		- No se muestrar columnas- Opción para verlas
+
+	- Poner última fila tabla redondeada
