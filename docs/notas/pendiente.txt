@@ -1,6 +1,6 @@
 Hecho
-- Estructura básica: index.html, carpetas: CSS, JS RESOURCES
-- Diseño:
+OK- Estructura básica: index.html, carpetas: CSS, JS RESOURCES
+OK- Diseño:
 	- header: Encabezado: (libre) Datos ejercicio, enunciado
 	- mensaje
 	- boton
@@ -9,7 +9,7 @@ Hecho
 - 
 
 Pendiente:
-- Analizar formato de objeto para capturar los datos
+OK- Analizar formato de objeto para capturar los datos
 	- Cantidad campos = 
 	- Cantidad tuplas = 
 	- Valor localización 1º tupla (valdría cualquiera) =
@@ -20,15 +20,16 @@ Pendiente:
 		- ? Convertir en mayúsculas las primera letra =
 	- Valor cada dato (i=nº tupla) = 
 
+OK- Convertir json a tabla
 
 - actualizar los datos pidiendolos cada vez ??
 
-- Convertir json a tabla
+
 
 - Mejorar diseño tabla
 	- Colores cabecera
 	- Colores para separar datos
 	- Responsive:
 		- No se muestrar columnas- Opción para verlas
-
-	- Poner última fila tabla redondeada
+		- Mostrar datos comunes aparte
+	OK- Poner última fila tabla redondeada
