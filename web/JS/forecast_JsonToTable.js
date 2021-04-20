@@ -52,8 +52,17 @@ function createTable(obj) {
 	let ffEnd = fEnd.toLocaleDateString('es-ES', dFormat);
 	let ffmonth = fIni.toLocaleDateString('es-ES', mFormat);
 
+	/* Datos comunes */
+
+	/* Crear elemento para ver datos comunes oculto */
 	
-	let table = "<table>" + "<caption>" + "Datos meteorológicos de " + loc + " <br>entre el " + ffIni + " y el " + ffEnd + " de " + ffmonth + "</caption>";
+	let datosInd = "";
+	for (let i = 1; i < 4; i++) {
+		datosInd = "<p>" + Object.keys(obj[0])[i];
+	}
+
+
+	let table = "<table>" + "<caption>" + "<div>" + "Datos meteorológicos de " + loc + " <br>entre el " + ffIni + " y el " + ffEnd + " de " + ffmonth + "</div>" + "</caption>";
 	table += "<thead><tr>";
 	for (let i = 0; i < cantFields; i++) {
 		table += "<th scope=\"col\">";
@@ -65,7 +74,7 @@ function createTable(obj) {
 	table += "<tbody>";
 	for (let i = 0; i < cantLines; i++) {
 		table += "<tr>";
-		
+
 		table += "<th scope=\"row\">";
 		let f = new Date(obj[i].fecha);
 		let ff = f.toLocaleDateString('es-ES', dmyFormat);
@@ -74,12 +83,12 @@ function createTable(obj) {
 		table += "</th>";
 		for (let j = 1; j < cantFields; j++) {
 			table += "<td>";
-			if(Object.keys(obj[i])[j] = "nombre"){
+			if (Object.keys(obj[i])[j] = "nombre") {
 				table += capitalize(Object.values(obj[i])[j].toLowerCase());
-			}else{
+			} else {
 				table += Object.values(obj[i])[j];
 			}
-			
+
 			table += "</td>";
 		}
 		table += "</tr>";

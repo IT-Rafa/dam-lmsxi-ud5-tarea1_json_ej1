@@ -81,42 +81,64 @@ button:active {
 	margin:20px;
 }
 
-caption{
-	border-radius:150px 150px 0 0;
-	font-weight: bold;
-	background-color: aqua;
-	font-size:30px;
-	padding: 10px 100px;
-	border: solid 1px black;
-}
 
 
 
-table{
+table {
 	margin: auto;
 	width: 100%;
-}
-table {
+	background-color: #cbcbcb;
     border-collapse:separate;
-    border:solid black 1px;
-    border-radius:6px;
-    -moz-border-radius:6px;
+    border-radius:0  0 15px 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
+
+
+table div{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+	border: solid 2px#cbcbcb;
+	background-color: #cbcbcb;
+	border-radius:80px  80px 0 0;
+}
+caption{
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px rgb(54, 49, 49);
+	color: #857a70;
+	opacity: 0.7;
+	font-size: 35px;
+
+}
+
 
 td, th {
-    border-left:solid black 1px;
-    border-top:solid black 1px;
+	padding: 5px;
+}
+td{
+	border-collapse:separate;
+	border: solid 1px black;
+
+}
+th{
+	border:none;
 }
 
-th {
-    background-color: blue;
-    border-top: none;
+thead th {
+    background-color:blue;
+	color: white;
+	font-size: 16px;
 }
 
-td:first-child, th:first-child {
-     border-left: none;
+tbody th {
+    background-color:lightgreen;
+	border: solid 1px  #cbcbcb;
+	color:rgb(0, 44, 0);
 }
 
+tbody tr:last-child th{
+	border-radius:0  0 0 15px;
+}
+tbody tr:last-child td:last-child{
+	border-radius:0  0 15px 0;
+}
 footer{
 	margin-top: 20px;
 	border-radius: 25px;
@@ -129,4 +151,12 @@ footer{
 }
 footer p{
 	margin-top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		background-color: black;
+	}
+	 
+	
 }

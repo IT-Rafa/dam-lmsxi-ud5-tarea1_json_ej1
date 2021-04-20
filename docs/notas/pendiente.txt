@@ -27,9 +27,12 @@ OK- Convertir json a tabla
 
 
 - Mejorar diseño tabla
-	- Colores cabecera
+	OK- Colores cabecera
 	- Colores para separar datos
 	- Responsive:
+		- Crear elemento para ver datos comunes oculto 
+			en caption
 		- No se muestrar columnas- Opción para verlas
 		- Mostrar datos comunes aparte
+		   indicativo	nombre	provincia	altitud
 	OK- Poner última fila tabla redondeada
